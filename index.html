@@ -1,5 +1,53 @@
 <html>
-    <body>
-        <p>Hello from ray I really like at the drive in</p>
-    </body>
+
+<head>
+    <style>
+        body {
+            background-color: powderblue;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        p {
+            color: red;
+        }
+        button {
+            width: 1000;
+            height: 200;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Hello from ray I really like at the drive in</p>
+    <h2>READY</h2>
+    <p><em>
+            <p></p>Go
+        </em>
+
+        <button id="start">start</button>
+    <p></p>
+    <div id="results"></div>
+    <img src="https://qph.cf2.quoracdn.net/main-thumb-74565731-200-ixvwmiovmlitpvdadtgeiwxartxpxbtd.jpeg">
+
+    <script type="text/javascript">
+
+        let div = document.getElementById("results");
+        let start = document.getElementById("start");
+
+        start.addEventListener("click", function () {
+            alert("Hello I have been clicked")
+        });
+
+        console.log("Hello");
+        let sum = 0;
+        for (let i = 1; i < 100; i++) {
+            sum = sum + i;
+        }
+        div.innerText = sum;
+    </script>
+</body>
+
 </html>
